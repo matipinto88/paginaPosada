@@ -106,16 +106,67 @@
 .pie__pagina h3{
     text-align: center;
 }
-.form_container{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 800px;
-    border-radius: 20px;
-    border-color: gray;
-    border-width: 1px;
-    border-style:groove
-}
-.columna{
-    display: flex;
-}
+.form_container {  
+    
+    background-color:rgba(174, 171, 171, 0.2);
+    margin: 0 auto;
+    width: 900px;
+    padding: 1em;
+    font: 1em sans-serif;    
+    margin-bottom: 30px;
+  }
+
+  .form__control {
+    display: flex;    
+  }
+  
+  .form_container li {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .form_container li + li, .mensaje{
+    margin-top: 2em;
+  }
+  
+  .form__control label {
+    display: inline-block;
+    width: 165px;
+    text-align: left;    
+  }
+
+  .mensaje label {
+    display: inline-block;
+    width: 165px;
+  }
+
+  .mensaje textarea {    
+    width: 605px;
+  }
+
+  .mensaje {    
+    padding-inline-start: 40px;  
+  }
+  
+  .form_container input {
+    font: 1em sans-serif;    
+    width: 200px;
+    box-sizing: border-box;
+    border: 1px solid #999;
+  }
+  
+  input:focus, textarea:focus {
+    border-color: #000;
+  }
+  
+  textarea {
+    vertical-align: top;
+    height: 10em;
+  }  
+  
+  .button button{
+    margin-left: 210px;
+    margin-top: 15px;
+    font: 18px sans-serif; 
+  }

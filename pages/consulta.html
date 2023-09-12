@@ -10,6 +10,7 @@
 </head>
 
 <body>
+    <img class = "imagen_fondo" src="../img/posada_fondo.jpg" alt="imagen_fondo"></a>
     <!-- Barra de navegacion -->
     <nav class="navegador">
         <div class="titulo">
@@ -49,46 +50,53 @@
         <h2>CONSULTAS</h2>
 
         <div class="form_container">
-            
             <form action="">
-                <div class="columna">
-                    <div class="columna">
-                        <div class="form__control">
-                            <label for="">Nombre y apellido</label><br>
-                            <label for="">Telefono</label><br>
-                            <label for="">Fecha de ingreso</label><br>
-                        </div>
+              <div class="form__control">
+                <div>
+                  <ul>
+                    <li>
+                      <label for="name">Nombre y apellido:</label>
+                      <input type="text" placeholder="" />
+                    </li>
+                    <li>
+                      <label for="name">Telefono:</label>
+                      <input type="text" placeholder="" />
+                    </li>
+                    <li>
+                      <label for="mail">Email:</label>
+                      <input type="text" placeholder="" />
+                    </li>
         
-                        <div class="form__control">
-                            <input type="text" placeholder="" /><br>
-                            <input type="text" placeholder="" /><br>
-                            <input type="text" placeholder="" /><br>    
-                        </div>
-                    </div>
-                    <div class="columna">
-                        <div class="form__control">
-                            <label for="">Email</label><br>
-                            <label for="">Cantidad de personas</label><br>
-                            <label for="">Fecha de salida</label><br>
-                        </div>
-        
-                        <div class="form__control">
-                            <input type="text" placeholder="" /><br>
-                            <input type="text" placeholder="" /><br>
-                            <input type="text" placeholder="" /><br>    
-                        </div>
-                    </div>    
+                  </ul>
                 </div>
-                <label for="">Mensaje</label>
-                <textarea name="comentarios" required></textarea>
-
-
-                <div class="form__control">
-                    <input class="boton boton-submit" type="submit" value="Enviar" />
+                <div>
+                  <ul>
+                    <li>
+                      <label for="name">Cantidad de personas:</label>
+                      <input type="text" placeholder="" />
+                    </li>
+                    <li>
+                      <label for="name">Fecha de ingreso:</label>
+                      <input type="text" placeholder="" />
+                    </li>
+                    <li>
+                      <label for="mail">Fecha de salida:</label>
+                      <input type="text" placeholder="" />
+                    </li>
+                  </ul>
                 </div>
+              </div>
+              <div class="mensaje">          
+                  <label for="msg">Mensaje:</label>
+                  <textarea id="msg" name="user_message"></textarea>          
+              </div>
+              <div class="">
+                <li class="button">
+                  <button type="submit">Enviar</button>
+                </li>          
+            </div>
             </form>
-        </div>
-
+          </div>
 
     </header>
     <footer class="pie__pagina" id="fin">
