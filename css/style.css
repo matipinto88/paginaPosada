@@ -66,7 +66,7 @@
 
 .header__container img {   
     border-radius: 12px; 
-    width: 500px;
+    width: 700px;
 }
 .header__container iframe {
     display: flex;
@@ -76,23 +76,89 @@
     display: flex;   
     justify-content: space-around;
 }
-.habitaciones img{    
-    width: 400px;
+.contenedor_servicios p {
+  width: 400px;
 }
+.contenedor_servicios {
+  margin:10px;
+  padding: 10px;
+}
+
+/*Estilo de habitaciones*/
+
+.main_container {
+  box-sizing: border-box;
+  overflow: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;     
+  position:relative;
+  padding: 10px;
+}
+.titulo_habitaciones{
+  margin-top: 130px; 
+  margin-left: 10px;
+  margin-right: 10px;
+  border-bottom: 3px solid #896e65;  
+ }
+
+.cabecera, .seccion, .seccion2, .seccion3, .seccion4 {
+  padding: 10px;  
+}
+.seccion, .seccion2, .seccion3, .seccion4 {
+   text-align: center;
+}
+.cabecera {
+  display: flex;
+  justify-content: center;
+}
+.cabecera p {
+  width: 450px;  
+  margin-top: 60px;
+  font-size: 150%
+}
+.grid img {
+  border-radius: 12px;
+  width: 450px;
+}
+.grid {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  gap: 5px;
+  grid-template-areas: 
+  "cabecera cabecera cabecera section section section"    
+  "section2 section2 section3 section3 section4 section4"
+  ;
+}
+.cabecera{
+  grid-area: cabecera;
+}
+.seccion{
+  grid-area: section;
+}
+.seccion2{
+  grid-area: section2;
+}
+.seccion3{
+  grid-area: section3;
+}
+.seccion4{
+  grid-area: section4;
+}
+/*Fin estilo habitaciones*/
 
 .social img {    
     width: 48px;
+}
+.social {    
+  text-align: center;    
 }
 .pie__pagina {
     position:relative;
     padding: 1px;
     background-color: rgb(150, 72, 72);
-}
-
-.social {
-    
-    text-align: center;
-    
 }
 
 .navegador ul {  
@@ -106,6 +172,7 @@
 .pie__pagina h3{
     text-align: center;
 }
+/*Estilo del form arranca aca*/
 .form_container {  
     
     background-color:rgba(174, 171, 171, 0.2);
@@ -170,3 +237,4 @@
     margin-top: 15px;
     font: 18px sans-serif; 
   }
+  /*Estilo del form hasta aca*/
