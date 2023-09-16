@@ -101,6 +101,10 @@
   display: flex;
   justify-content: space-around;
 }
+.contenedor_ubicacion {
+  flex-wrap: wrap;
+  gap: 20px;
+}
 
 .contenedor_servicios p {
   width: 400px;
@@ -109,6 +113,7 @@
 .contenedor_servicios {
   margin: 10px;
   padding: 10px;
+  flex-wrap: wrap;
 }
 
 /*Estilo de habitaciones*/
@@ -260,8 +265,7 @@
   border: 1px solid #999;
 }
 
-input:focus,
-textarea:focus {
+input:focus, textarea:focus {
   border-color: #000;
 }
 
@@ -277,6 +281,8 @@ textarea {
 }
 
 /*Estilo del form hasta aca*/
+
+
 @media (max-width:1119px) {
   .navegacion_nav .menu {
     display: none;    
@@ -302,3 +308,62 @@ textarea {
     align-items: start;
   }
 }
+@media (max-width:768px) {
+  .header__container img{    
+    width: 450px;
+  }
+  .header__container p {
+    width: 450px;
+    font-size: 18px;
+  }
+  .contenedor_ubicacion iframe{
+    width: 450px;
+  }
+}
+@media (max-width: 1385px) {
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 150px repeat(2, 1fr);
+    gap: 5px;
+    grid-template-areas:
+      "cabecera cabecera"
+      "section section2"
+      "section3 section4"      
+    ;
+  }
+  .cabecera {    
+    justify-content: left;    
+  }
+  .cabecera p {
+    margin-top: 0;    
+  }
+}
+@media (max-width: 945px){
+  .grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 150px repeat(4, 1fr);
+    gap: 5px;
+    grid-template-areas:
+      "cabecera"
+      "section"
+      "section2"
+      "section3"
+      "section4"      
+    ;
+  }
+  .form_container div{
+    flex-direction: column;
+  }
+  .mensaje textarea {
+    width: 200px;
+  }
+  .form_container{
+    width: 300px;
+  }
+  .button button {
+    margin-left: 40px;    
+  }
+}
+
