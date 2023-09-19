@@ -1,5 +1,5 @@
 * {
-  font-family: "Poppins", sans-serif;
+  font-family: 'Poppins', sans-serif;
   list-style: none;
   text-decoration: none;
 }
@@ -25,16 +25,13 @@
   z-index: 100;
   flex-wrap: wrap;
 }
-
 .navegacion_nav {
   margin: 0;
 }
-
 .navegacion_nav label {
   display: none;
 }
-
-.navegacion_nav #check__menu {
+.navegacion_nav #check__menu{
   display: none;
 }
 
@@ -56,16 +53,17 @@
   font-family: "KGRedHands";
   src: url(../fonts/KGRedHands.ttf);
 }
+
 .navegador h1 {
   font-family: "KGRedHands";
 }
 
+
 .navegador ul li {
   padding: 10px;
 }
-
-.navegador li:hover {
-  border-bottom: 3px solid rgb(237, 191, 191);
+.navegador li:hover{
+  border-bottom: 3px solid rgb(237, 191, 191);;
 }
 
 .header__container {
@@ -79,8 +77,6 @@
 }
 
 .contenedor_header {
-  width: 100%;
-  height: 100%;
   display: flex;
   justify-content: space-around;
   flex-wrap: wrap;
@@ -91,23 +87,11 @@
   font-size: 150%;
 }
 
-.imagen_descripcion {
-  width: 50%;
-  height: 380px;
-  background-image: url("../img/posada.jpg");
+.header__container img {
   border-radius: 12px;
-  background-size: cover;
-  animation: galeria 10s infinite;
+  width: 700px;
 }
 
-@keyframes galeria {
-  0%, 100% {
-    background-image: url("../img/posada.jpg");
-  }
-  50% {
-    background-image: url("../img/posada_fondo.jpg");
-  }
-}
 .header__container iframe {
   display: flex;
   text-align: center;
@@ -117,7 +101,6 @@
   display: flex;
   justify-content: space-around;
 }
-
 .contenedor_ubicacion {
   flex-wrap: wrap;
   gap: 20px;
@@ -134,6 +117,7 @@
 }
 
 /*Estilo de habitaciones*/
+
 .main_container {
   box-sizing: border-box;
   overflow: auto;
@@ -168,7 +152,7 @@
 .cabecera p {
   width: 450px;
   margin-top: 60px;
-  font-size: 150%;
+  font-size: 150%
 }
 
 .grid img {
@@ -181,7 +165,10 @@
   grid-template-columns: repeat(6, 1fr);
   grid-template-rows: repeat(2, 1fr);
   gap: 5px;
-  grid-template-areas: "cabecera cabecera cabecera section section section" "section2 section2 section3 section3 section4 section4";
+  grid-template-areas:
+    "cabecera cabecera cabecera section section section"
+    "section2 section2 section3 section3 section4 section4"
+  ;
 }
 
 .cabecera {
@@ -205,6 +192,7 @@
 }
 
 /*Fin estilo habitaciones*/
+
 .social img {
   width: 48px;
 }
@@ -213,7 +201,7 @@
   text-align: center;
 }
 
-.pie__pagina {
+.pie__pagina {  
   margin: 0;
   width: 100%;
   position: relative;
@@ -227,6 +215,7 @@
 
 /*Estilo del form arranca aca*/
 .form_container {
+
   background-color: rgba(174, 171, 171, 0.2);
   margin: 0 auto;
   width: 900px;
@@ -245,7 +234,7 @@
   margin: 0;
 }
 
-.form_container li + li,
+.form_container li+li,
 .mensaje {
   margin-top: 2em;
 }
@@ -292,20 +281,23 @@ textarea {
 }
 
 /*Estilo del form hasta aca*/
-@media (max-width: 1119px) {
+
+
+@media (max-width:1119px) {
   .navegacion_nav .menu {
-    display: none;
+    display: none;    
   }
   .navegacion_nav label {
     display: block;
-    font-size: 50px;
+    font-size: 50px;    
   }
   .navegacion_nav {
     display: flex;
-    align-items: center;
-    margin-right: 15px;
+    align-items:center;
+    margin-right: 15px;    
   }
-  .navegacion_nav #check__menu:checked ~ .menu {
+
+  .navegacion_nav #check__menu:checked ~.menu{
     background-color: rgb(150, 72, 72);
     position: absolute;
     left: 0;
@@ -315,23 +307,16 @@ textarea {
     justify-content: start;
     align-items: start;
   }
-  .imagen_descripcion {
-    width: 70%;
-    height: 280px;
-    background-size: cover;
-  }
 }
-@media (max-width: 768px) {
-  .imagen_descripcion {
-    width: 70%;
-    height: 180px;
-    background-size: cover;
+@media (max-width:768px) {
+  .header__container img{    
+    width: 450px;
   }
   .header__container p {
     width: 450px;
     font-size: 18px;
   }
-  .contenedor_ubicacion iframe {
+  .contenedor_ubicacion iframe{
     width: 450px;
   }
 }
@@ -341,35 +326,44 @@ textarea {
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: 150px repeat(2, 1fr);
     gap: 5px;
-    grid-template-areas: "cabecera cabecera" "section section2" "section3 section4";
+    grid-template-areas:
+      "cabecera cabecera"
+      "section section2"
+      "section3 section4"      
+    ;
   }
-  .cabecera {
-    justify-content: left;
+  .cabecera {    
+    justify-content: left;    
   }
   .cabecera p {
-    margin-top: 0;
+    margin-top: 0;    
   }
 }
-@media (max-width: 945px) {
+@media (max-width: 945px){
   .grid {
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 150px repeat(4, 1fr);
     gap: 5px;
-    grid-template-areas: "cabecera" "section" "section2" "section3" "section4";
+    grid-template-areas:
+      "cabecera"
+      "section"
+      "section2"
+      "section3"
+      "section4"      
+    ;
   }
-  .form_container div {
+  .form_container div{
     flex-direction: column;
   }
   .mensaje textarea {
     width: 200px;
   }
-  .form_container {
+  .form_container{
     width: 300px;
   }
   .button button {
-    margin-left: 40px;
+    margin-left: 40px;    
   }
 }
 
-/*# sourceMappingURL=style.css.map */
