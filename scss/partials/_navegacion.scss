@@ -1,0 +1,47 @@
+.navegador {
+    top: 0;
+    left: 0;
+    display: flex;
+    width: 100%;
+    background-color: rgb(150, 72, 72);
+    position: fixed;
+    justify-content: space-between;
+    color: rgb(237, 191, 191);
+    z-index: 100;
+    flex-wrap: wrap;
+  
+    .navegacion_nav {
+      margin: 0;
+  
+      label {
+        display: none;
+      }
+  
+      #check__menu {
+        display: none;
+      }
+    }
+  
+    .titulo {
+      padding-left: 10px;
+    }
+  
+    ul {
+      padding-right: 10px;
+      display: flex;
+      padding-inline-start: 0;
+      li {
+        padding: 10px;
+      }
+      li:hover {
+        border-bottom: 3px solid rgb(237, 191, 191);  
+      }
+    }
+  
+    a {
+      color: black;
+    }
+    h1 {
+      font-family: "KGRedHands";
+    }
+  }

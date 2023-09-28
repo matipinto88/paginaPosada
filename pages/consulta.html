@@ -3,6 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
+    <link rel="shortcut icon" href="../img/logos/logoposada.jpeg" type="image/svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Realiza tu consulta. Posada serrana de descanso, para hospedarse en familia">
     <meta name="keywords" content="vacaciones, viaje, carlos paz, alojamiento, hotel, posada, descanso">
@@ -58,8 +59,11 @@
 
         <h2>CONSULTAS</h2>
 
-        <div class="form_container">
+        <div class="form_container">     
+          <input type="checkbox" id="check__mensaje">   
+          <h3>¡Tu consulta fue enviada con exito!</h3>   
             <form action="">
+              
               <div class="form__control">
                 <div>
                   <ul>
@@ -99,9 +103,11 @@
                   <label for="msg">Mensaje:</label>
                   <textarea id="msg" name="user_message"></textarea>          
               </div>
-              <div class="">
-                <li class="button">
-                  <button type="submit">Enviar</button>
+              <div class="">                
+                <li class="button">                  
+                  <label for="check__mensaje">
+                    <img src="../img/btnenviar.jpg" alt="Enviar">
+                  </label>                  
                 </li>          
             </div>
             </form>

@@ -1,0 +1,10 @@
+@mixin formulario($dnone, $dflex){
+    #check__mensaje:checked ~ form{  
+        display: $dnone;
+      }
+      
+      #check__mensaje:checked ~ h3{  
+        display: $dflex;
+        justify-content: center;
+      }
+}
